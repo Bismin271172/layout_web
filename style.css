@@ -1,0 +1,161 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Manrope:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', 'Manrope';
+}
+
+body{
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2em;
+    color: #114488;
+    pointer-events: none;
+}
+
+.navigation a{
+    text-decoration: none;
+    color: #114488;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    background: #114488;
+    color: #e8f2eb;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text{
+    position: absolute;
+    font-size: 5em;
+    color: #64768d;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400&family=Manrope:wght@400;500;600&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Manrope;
+}
+
+.body{
+    overflow-x: hidden;
+}
+.Background{
+    min-height: 100vh;
+    background-image: url(riverplastic.jpg);
+    background-size: 1950px;
+    background-position: 50% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Background h1{
+    color: whitesmoke;
+    font-size: 50px;
+}
+.Background h2{
+    color: whitesmoke;
+    font-size: 50px;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: white;
+    font-size: 20px;
+    padding: 20px 60px;
+    position: absolute;
+    width: 92%;
+}
+
+header nav span{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav span a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+@keyframes beforeAnimate{
+    0%{
+        width: 0%;
+        transform: translateX(-50%);
+    }
+    100%{
+        width: 100%;
+        transform: translateX(0%);
+    }
+}
+header nav span a::before{
+    content: "";
+    background-color: whitesmoke;
+    width: 100%;
+    height: 2.4px;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    display: none;
+    animation: beforeAnimat .25s;
+}
+
+header nav span a:hover::before{
+    display: unset;
+}
+
+.About{
+    background-color: grey;
+    color: whitesmoke;
+    padding: 40px 120px;
+    font-size: 16px;
+}
+.About h1{
+    padding: 40px 0px;
+    font-size: 30px;
+}
+.About p{
+    padding: 18px 0px;
+}
